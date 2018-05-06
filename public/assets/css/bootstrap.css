@@ -372,7 +372,7 @@ img {
 }
 
 hr {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eeeeee;
@@ -848,7 +848,7 @@ pre code {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 0px;
 }
 
 .col-xs-1,
@@ -915,7 +915,7 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 750px;
+    max-width: 100%;
   }
   .col-sm-1,
   .col-sm-2,
@@ -1069,7 +1069,7 @@ pre code {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 970px;
+    max-width: 100%;
   }
   .col-md-1,
   .col-md-2,
@@ -1094,13 +1094,13 @@ pre code {
     width: 25%;
   }
   .col-md-4 {
-    width: 33.33333333333333%;
+    width: 100%;
   }
   .col-md-5 {
     width: 41.66666666666667%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 100%;
   }
   .col-md-7 {
     width: 58.333333333333336%;
@@ -1232,7 +1232,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 100%;
   }
   .col-lg-1,
   .col-lg-2,
@@ -4917,6 +4917,8 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
+  float:left;
+  width: 50%;
   padding: 30px;
   margin-bottom: 30px;
   font-size: 21px;
