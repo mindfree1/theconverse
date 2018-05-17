@@ -1,31 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php 
-		echo $title;
-		 ?></title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-</head>
-<body>
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12 col-lg-12 col-sm-12 col-xl-12">
-		<?php 
-			//The controller response object
-			echo $content;
-		?>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="textbox">
+		<?php if (isset($content)){echo $content;} ?>
 		</div>
 	</div>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-</body></html>
+	<div>
+		<hr/>
+		<footer>
+			<p class="pull-right" style="height:100%;">Page rendered in {exec_time}s using {mem_usage}mb of memory.</p>
+			<p>
+				<b>The Converse</b> is copywrighted 2018. Start of something hopefulyl amazing.<br>
+				<small>Powered by FuelPHP Version: <?php echo Fuel::VERSION; ?> Fuel is copywrite under the MIT license.</small>
+			</p>
+		</footer>
+	</div>

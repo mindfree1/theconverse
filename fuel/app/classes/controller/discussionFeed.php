@@ -20,6 +20,10 @@
  * @extends  Controller
  */
 
+/**
+ * 
+ */
+
 class Controller_discussionFeed extends \Controller_Template
 {
 	/**
@@ -43,7 +47,9 @@ class Controller_discussionFeed extends \Controller_Template
 		$rss = Model_mainDiscussionFeed::runcurl($feeds['bbc']);
 		$rss = Model_mainDiscussionFeed::feedkit($rss);
 
-		$data['feed'] = array('list' => $rss, 'source' => 'via ' .$feeds['bbc']);
+		//$data['feed'] = array('list' => $rss, 'source' => 'via ' .$feeds['bbc']);
+
+		$data['feed'] = array('list' => $rss);
 
 		$this->template->title = 'Discussion Topics';
 		$this->template->content = View::forge('mainDiscussionFeed/mainDiscussionFeed', $data, false);

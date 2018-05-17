@@ -773,8 +773,8 @@ pre code {
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  /*margin-right: -15px;
+  margin-left: -15px;*/
 }
 
 .row:before,
@@ -1101,6 +1101,7 @@ pre code {
   }
   .col-md-6 {
     width: 100%;
+    height: 100%;
   }
   .col-md-7 {
     width: 58.333333333333336%;
@@ -4925,7 +4926,7 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #fafaff;
 }
 
 .jumbotron h1 {

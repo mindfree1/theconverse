@@ -4,7 +4,7 @@
 
 </head>
 <body>
-	<?php echo $feed['source']; ?>
+	<?php //echo $feed['source']; ?>
 	<?php echo $feed['list']; ?>
 </body>
 </html>

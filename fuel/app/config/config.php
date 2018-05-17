@@ -23,7 +23,7 @@ return array(
 	 *
 	 * Set this to null to have it automatically detected.
 	 */
-	// 'base_url'  => null,
+	 'base_url'  => null,
 
 	/**
 	 * url_suffix - Any suffix that needs to be added to
@@ -34,27 +34,27 @@ return array(
 	 *
 	 * Set this to an empty string if no suffix is used
 	 */
-	// 'url_suffix'  => '',
+	'url_suffix'  => '',
 
 	/**
 	 * index_file - The name of the main bootstrap file.
 	 *
 	 * Set this to 'index.php if you don't use URL rewriting
 	 */
-	// 'index_file' => false,
+	 'index_file' => false,
 
-	// 'profiling'  => false,
+	 //'profiling'  => false,
 
 	/**
 	 * Default location for the file cache
 	 */
-	// 'cache_dir'       => APPPATH.'cache/',
+	//'cache_dir'       => APPPATH.'cache/',
 
 	/**
 	 * Settings for the file finder cache (the Cache class has it's own config!)
 	 */
-	// 'caching'         => false,
-	// 'cache_lifetime'  => 3600, // In Seconds
+	//'caching'         => false,
+	 //'cache_lifetime'  => 3600, // In Seconds
 
 	/**
 	 * Callback to use with ob_start(), set this to 'ob_gzhandler' for gzip encoding of output
@@ -77,14 +77,14 @@ return array(
 	/**
 	 * Localization & internationalization settings
 	 */
-	// 'language'           => 'en', // Default language
-	// 'language_fallback'  => 'en', // Fallback language when file isn't available for default language
-	// 'locale'             => 'en_US', // PHP set_locale() setting, null to not set
+	 //'language'           => 'en', // Default language
+	 //'language_fallback'  => 'en', // Fallback language when file isn't available for default language
+	 //'locale'             => 'en_US', // PHP set_locale() setting, null to not set
 
 	/**
 	 * Internal string encoding charset
 	 */
-	// 'encoding'  => 'UTF-8',
+	//'encoding'  => 'UTF-8',
 
 	/**
 	 * DateTime settings
@@ -113,17 +113,15 @@ return array(
 	 * Security settings
 	 */
 	'security' => array(
-		// 'csrf_autoload'            => false,
-		// 'csrf_autoload_methods'    => array('post', 'put', 'delete'),
-		// 'csrf_bad_request_on_fail' => false,
-		// 'csrf_auto_token'          => false,
-		// 'csrf_token_key'           => 'fuel_csrf_token',
-		// 'csrf_expiration'          => 0,
+		'csrf_autoload'=> false,
+		'csrf_token_key'=> 'fuel_csrf_token',
+		'csrf_expiration'=> 0,
+		'uri_filter'       => array('htmlentities'),
 
 		/**
 		 * A salt to make sure the generated security tokens are not predictable
 		 */
-		// 'token_salt'            => 'put your salt value here to make the token more secure',
+		// 'token_salt'=> 'this is a random salt',
 
 		/**
 		 * Allow the Input class to use X headers when present
@@ -131,7 +129,7 @@ return array(
 		 * Examples of these are HTTP_X_FORWARDED_FOR and HTTP_X_FORWARDED_PROTO, which
 		 * can be faked which could have security implications
 		 */
-		// 'allow_x_headers'       => false,
+		// 'allow_x_headers'=> false,
 
 		/**
 		 * This input filter can be any normal PHP function as well as 'xss_clean'
@@ -139,7 +137,7 @@ return array(
 		 * WARNING: Using xss_clean will cause a performance hit.
 		 * How much is dependant on how much input data there is.
 		 */
-		'uri_filter'       => array('htmlentities'),
+		//'uri_filter'=> array('htmlentities'),
 
 		/**
 		 * This input filter can be any normal PHP function as well as 'xss_clean'
@@ -147,7 +145,7 @@ return array(
 		 * WARNING: Using xss_clean will cause a performance hit.
 		 * How much is dependant on how much input data there is.
 		 */
-		// 'input_filter'  => array(),
+		 //'input_filter'=> array(),
 
 		/**
 		 * This output filter can be any normal PHP function as well as 'xss_clean'
@@ -155,28 +153,28 @@ return array(
 		 * WARNING: Using xss_clean will cause a performance hit.
 		 * How much is dependant on how much input data there is.
 		 */
-		'output_filter'  => array('Security::htmlentities'),
+		'output_filter'=> array('Security::htmlentities'),
 
 		/**
 		 * Encoding mechanism to use on htmlentities()
 		 */
-		// 'htmlentities_flags' => ENT_QUOTES,
+		 'htmlentities_flags'=> ENT_QUOTES,
 
 		/**
 		 * Whether to encode HTML entities as well
 		 */
-		// 'htmlentities_double_encode' => false,
+		 'htmlentities_double_encode'=> false,
 
 		/**
 		 * Whether to automatically filter view data
 		 */
-		// 'auto_filter_output'  => true,
+		'auto_filter_output'=> true,
 
 		/**
 		 * With output encoding switched on all objects passed will be converted to strings or
 		 * throw exceptions unless they are instances of the classes in this array.
 		 */
-		'whitelisted_classes' => array(
+		'whitelisted_classes'=> array(
 			'Fuel\\Core\\Presenter',
 			'Fuel\\Core\\Response',
 			'Fuel\\Core\\View',
@@ -190,13 +188,13 @@ return array(
 	 */
 	// 'cookie' => array(
 		// Number of seconds before the cookie expires
-		// 'expiration'  => 0,
+		 //'expiration'  => 0,
 		// Restrict the path that the cookie is available to
 		// 'path'        => '/',
 		// Restrict the domain that the cookie is available to
-		// 'domain'      => null,
+		 //'domain'      => null,
 		// Only transmit cookies over secure connections
-		// 'secure'      => false,
+		 //'secure'      => false,
 		// Only transmit cookies over HTTP, disabling Javascript access
 		// 'http_only'   => false,
 	// ),
@@ -214,21 +212,21 @@ return array(
 	/**
 	 * Controller class prefix
 	 */
-	 // 'controller_prefix' => 'Controller_',
+	  //'controller_prefix' => 'Controller_',
 
 	/**
 	 * Routing settings
 	 */
-	// 'routing' => array(
+	 //'routing' => array(
 		/**
 		 * Whether URI routing is case sensitive or not
 		 */
-		// 'case_sensitive' => true,
+		 //'case_sensitive' => true,
 
 		/**
 		 *  Whether to strip the extension
 		 */
-		// 'strip_extension' => true,
+		 //'strip_extension' => true,
 	// ),
 
 	/**
@@ -252,9 +250,9 @@ return array(
 	 *
 	 * Paths MUST end with a directory separator (the DS constant)!
 	 */
-	'package_paths' => array(
-		PKGPATH,
-	),
+	//'package_paths' => array(
+		//PKGPATH,
+	//),
 
 	/**************************************************************************/
 	/* Always Load                                                            */
@@ -289,7 +287,7 @@ return array(
 		/**
 		 * Classes to autoload & initialize even when not used
 		 */
-		// 'classes'  => array(),
+		 //'classes'  => array(),
 
 		/**
 		 * Configs to autoload
@@ -309,7 +307,7 @@ return array(
 		 * add it like 'validation' => 'forms'.
 		 * If you don't want the lang in a group use null as groupname.
 		 */
-		// 'language'  => array(),
+	    //'language'  => array(),
 	// ),
 
 );

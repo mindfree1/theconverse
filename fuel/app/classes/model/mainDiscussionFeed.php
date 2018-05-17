@@ -57,13 +57,27 @@
 
 		$bt = '<ul class="list-group">';
 
+		foreach ($bxe->channel->item as $item)
+		{
+			foreach ($item->xpath ('media:thumbnail') as $mediathumbnail) {
+				$thumb = $mediathumbnail['url'];
+			}
+		}
 		//use objects or arrays
-		foreach ($bxe->channel->item as $ite) {
-			$bt .= '<li class="list-group-item  d-flex justify-content-between align-items-center"><a  href="'.$ite->link.'">
-				'.$ite->title.'
-				</a><small><b>'.$ite->pubDate.'
-				</b></small></li>';
+		foreach ($bxe->channel->item as $newsitem) {
+			//$thumb = $node->getElementsByTagName('media:thumbnail')->item(0)->attributes->getNamedItem('url')->nodeValue;
 
+			/*$t_attrs = $newsitem->thumbnail[0]->attributes();
+			## we only want the url for this purpose
+			$thumb = $t_attrs['url'];*/
+			foreach ($newsitem->xpath ('media:thumbnail') as $mediathumbnail) {
+				$thumb = $mediathumbnail['url'];
+			}
+
+			$bt .= 
+				'<li class="list-group-item d-flex justify-content-between align-items-center" style="height:350px;margin-bottom:20px;margin-top:20px;"><div><img src="'.$thumb.'" width="300px" height="100%"'.'</img>'.
+				'<span>'.$newsitem->description.'</span></br>'.
+				'<a href="#"'. ' onClick=clearDiscussionFeed("/theconverse/loadArticle");>'.$newsitem->title.'</a>'.'<br><small><b>Published:'.$newsitem->pubDate.'</b></small></li></div>';
 			$bt .= "\n";
 			}
 		$bt .= '</ul>';
