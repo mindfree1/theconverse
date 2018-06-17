@@ -55,6 +55,44 @@ class Controller_discussionFeed extends \Controller_Template
 		$this->template->content = View::forge('mainDiscussionFeed/mainDiscussionFeed', $data, false);
 	}
 
+	/** @access public */
+
+	public function action_topicFeed($topic)
+	{
+		//$data['topic'] = strtoupper($topic);
+
+		$topic = strtolower($topic);
+		$data = array();
+		$feed = array(
+			'world' => '',
+			'daily briefing' => '',
+			'ourcommunity' => '',
+			'ideas' => '',
+			'security' => '',
+			'local news' => '',
+			'global news' => '',
+			'tech' => '',
+			'polotics' => 'http://feeds.bbci.co.uk/news/politics/rss.xml',
+			'policy' => '',
+			'finance' => '',
+			'business' => '',
+			'science' => '',
+			'health' => '',
+			'entertainment & arts' => '',
+			'opinion pieces' => ''
+
+		);
+
+		$rss = Model_mainDiscussionFeed::runcurl($feed[$topic]);
+		$rss = Model_mainDiscussionFeed::feedkit($rss);
+
+		$data['feed'] = array('list' => $rss);
+
+		$this->template->title = 'Dicussion Topic';
+		$this->template->content = View::forge('mainDiscussionFeed/mainDiscussionFeed', $data, false);
+
+	}
+
 	/**
 	 * A typical "Hello, Bob!" type example.  This uses a Presenter to
 	 * show how to use them.

@@ -39,11 +39,12 @@ class Controller_Initialise extends Controller
 	 * @access  public
 	 * @return  Response
 	 */
-	public function action_hello()
+	/*public function action_hello()
 	{
 		return Response::forge(Presenter::forge('welcome/hello'));
 	}
-
+	*/
+	
 	/**
 	 * The 404 action for the application.
 	 *

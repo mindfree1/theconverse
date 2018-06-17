@@ -114,7 +114,7 @@
 		}
 
 		.nav {
-			height: 150px;
+			height: 50px;
 			display: flex;
 			justify-content: center;
 			width: 100%;
@@ -210,49 +210,54 @@
 			-->
 			<ul class="nav">
 				<li class="topicsbtns">
-					<a href="/theconverse/dailybriefing/">DAILY BREIFING</a>
+					<!-- This one will take some time to setup as should be a quick daily briefing of topics around the net to discuss -->
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/dailybriefing/');">DAILY BREIFING</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/ourcommunity/">OUR COMMUNITY</a>
+					<!-- This one will take a bit longer to setup as it should be a custom feed created based on what the userbase is discussing / debating cosntructively the most --> 
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/ourcommunity/');">OUR COMMUNITY</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/ideas/">IDEAS</a>
+					<!-- This will also be a custom feed created specifically for TheConverse which essentially the idea currently is it will be a blog-typ seciton where people can write-up ideas around items/topics like
+					what a 'new democracy' could look like?, 'What future thinking Blockchain uses could be' etc - to help fuel intelligent conversation and progress it forward.
+					 -->
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/ideas/');">IDEAS</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/security/">SECURITY</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/security/');">SECURITY</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/localnews/">LOCAL NEWS</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/localnews/');">LOCAL NEWS</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/globalnews/">GLOBAL NEWS</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/globalnews/');">GLOBAL NEWS</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/tech/">TECH</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/tech/');">TECH</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/polotics/">POLOTICS</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/polotics/');">POLOTICS</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/policy/">POLICY</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/policy/');">POLICY</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/finance/">FINANCE</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/finance/');">FINANCE</a>
 				</li>
 				<li class="topicsbtns">
-					<a href=/theconverse/business/">BUSINESS</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/business/');">BUSINESS</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/science/">SCIENCE</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/science/');">SCIENCE</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/health/">HEALTH</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/health/');">HEALTH</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/entertainmentarts/">ENTERTAINMENT & ART DISCUSSION</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/entertainmentarts/');">ENTERTAINMENT & ART DISCUSSION</a>
 				</li>
 				<li class="topicsbtns">
-					<a href="/theconverse/opinion/">OPINION PIECES</a>
+					<a href="javascript:loadDiscussionFeedArticles('/theconverse/discussionFeed/topicFeed/opinion/');">OPINION PIECES</a>
 				</li>
 			</ul>
 			<!--<button type="button" class="topicbtns">DAILY BREIFING</button>
