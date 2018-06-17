@@ -97,6 +97,31 @@
 
 		#commenttextbox {
 		}
+
+		.topicbtns {
+			background-color: #ffffff;
+			border: none;
+			color: #883ced;
+			padding: 15px 25px;
+			text-align: center;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.topicbtns:hover{
+			background-color: #0066CC;
+			color: #EEEEEE;
+		}
+
+		.nav {
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
 	</style>
 </head>
 <body>
@@ -177,6 +202,75 @@
 
 
 	<div class="container-fluid" style="height:100%;">
+		<div class="row-fluid" style="padding-left: 5%;padding-right: 5%;display: flex;">
+			<!-- 'Topic' buttons will go in this section, basically making it easy to find a topic to read/follow/disucssion and ultiamtely debate contructively 
+
+				Further to that, current thoughts are that want to make this also dynamically populated to some extent, if not fully, 
+				so that it almost provides a quick glance at a 'word cloud' of what is trending / being discussed with the most contructive passion.
+			-->
+			<ul class="nav">
+				<li class="topicsbtns">
+					<a href="/theconverse/dailybriefing/">DAILY BREIFING</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/ourcommunity/">OUR COMMUNITY</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/ideas/">IDEAS</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/security/">SECURITY</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/localnews/">LOCAL NEWS</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/globalnews/">GLOBAL NEWS</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/tech/">TECH</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/polotics/">POLOTICS</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/policy/">POLICY</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/finance/">FINANCE</a>
+				</li>
+				<li class="topicsbtns">
+					<a href=/theconverse/business/">BUSINESS</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/science/">SCIENCE</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/health/">HEALTH</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/entertainmentarts/">ENTERTAINMENT & ART DISCUSSION</a>
+				</li>
+				<li class="topicsbtns">
+					<a href="/theconverse/opinion/">OPINION PIECES</a>
+				</li>
+			</ul>
+			<!--<button type="button" class="topicbtns">DAILY BREIFING</button>
+			<button type="button" class="topicbtns">OUR COMMUNITY</button>
+			<button type="button" class="topicbtns">IDEAS</button>
+			<button type="button" class="topicbtns">SECURITY</button>
+			<button type="button" class="topicbtns">LOCAL NEWS</button>
+			<button type="button" class="topicbtns">GLOBAL NEWS</button>
+			<button type="button" class="topicbtns">TECH</button>
+			<button type="button" class="topicbtns">POLOTICS</button>
+			<button type="button" class="topicbtns">POLICY</button>
+			<button type="button" class="topicbtns">FINANCE</button>
+			<button type="button" class="topicbtns">BUSINESS</button>
+			<button type="button" class="topicbtns">SCIENCE</button>
+			<button type="button" class="topicbtns">HEALTH</button>
+			<button type="button" class="topicbtns">ENTERTAINMENT & ART DISCUSSION</button>
+			<button type="button" class="topicbtns">OPINION PIECES</button>-->
+		</div>
   		<div class="row-fluid" style="height:7676px;">
     		<div class="span2 leftparty" style="height:100%;">
       			<!--Left Sidebar content-->

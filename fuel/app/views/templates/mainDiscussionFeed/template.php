@@ -10,7 +10,7 @@
 		<footer>
 			<p class="pull-right" style="height:100%;">Page rendered in {exec_time}s using {mem_usage}mb of memory.</p>
 			<p>
-				<b>The Converse</b> is copywrighted 2018. Start of something hopefulyl amazing.<br>
+				<b>The Converse</b> copywright 2018. Start of something hopefully amazing.<br>
 				<small>Powered by FuelPHP Version: <?php echo Fuel::VERSION; ?> Fuel is copywrite under the MIT license.</small>
 			</p>
 		</footer>
